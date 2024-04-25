@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    width: 100vw;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .item {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 2px 20px;
+    border: solid black 1px;
+}
+
+.navbar .item a {
+    text-decoration: none;
+    text-underline: none;
+    color: black;
+}
+
+.navbar .item a:visited {
+    color: black;
+}
+
+.content_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.content_container .me {
+    margin-top: 100px;
+    font-size: 25px;
+    height: 100vh;
+}
+
+.content_container .me .scroll {
+    margin-top: 50px;
+    background-color: aquamarine;
+}
+
+.content_container .projets {
+    gap: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.content_container .projets .title {
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content_container .projets .liste {
+    font-size: 20px;
+}
+
+.content_container .skills {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.content_container .skills .title {
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
