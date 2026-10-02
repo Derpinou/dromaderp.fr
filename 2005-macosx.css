@@ -1,0 +1,319 @@
+/* ============================================================
+   Dromaderp - version 2005 - Mac OS X (2005-macosx.html)
+   Mise en page : largeur fixe (780 px), centrée
+   ============================================================ */
+
+
+/* ---------- Remise à zéro ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---------- Page ---------- */
+
+body {
+    background-color: #f0f0f0;
+    background-image: repeating-linear-gradient(to bottom, #f8f8f8 0px, #f8f8f8 2px, #ececec 2px, #ececec 4px);
+    color: #222222;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 14px 0 28px 0;
+}
+
+a {
+    color: #1a52b0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- Sélecteur de version ---------- */
+
+#versions {
+    width: 780px;
+    margin: 0 auto 14px auto;
+    color: #444444;
+    font-size: 12px;
+}
+
+#versions select {
+    margin-left: 4px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+
+/* ---------- Fenêtre principale ---------- */
+
+#fenetre {
+    width: 780px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border: 1px solid #8a8a8a;
+    border-radius: 6px 6px 3px 3px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
+    overflow: hidden;
+}
+
+
+/* ---------- En-tête ---------- */
+
+#entete {
+    background-color: #dcdcdc;
+    background-image: linear-gradient(to bottom, #eeeeee 0%, #d2d2d2 100%);
+    border-bottom: 1px solid #8f8f8f;
+    box-shadow: inset 0 1px 0 #fbfbfb;
+    padding: 18px 22px 14px 22px;
+}
+
+#logo {
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 32px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+
+/* ---------- Navigation (boutons Aqua) ---------- */
+
+.navbar {
+    list-style: none;
+    margin-top: 14px;
+    overflow: hidden;
+}
+
+.navbar .item {
+    float: left;
+    margin-right: 6px;
+}
+
+.navbar .externe {
+    border-left: 1px solid #a6a6a6;
+    box-shadow: inset 1px 0 0 #f4f4f4;
+    margin-left: 6px;
+    padding-left: 13px;
+}
+
+.navbar .item a {
+    display: block;
+    height: 20px;
+    padding: 0 14px;
+    background-color: #eeeeee;
+    background-image: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 46%, #e2e2e2 54%, #f1f1f1 100%);
+    border: 1px solid #8c8c8c;
+    border-radius: 11px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), inset 0 1px 0 #ffffff;
+    color: #1e1e1e;
+    font-size: 12px;
+    line-height: 20px;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.navbar .item a:hover,
+.navbar .actif a {
+    background-color: #6aaef2;
+    background-image: linear-gradient(to bottom, #d8ecfd 0%, #98c9f5 46%, #5c9fea 50%, #74b4f2 75%, #a9dcfd 100%);
+    border-color: #3165ac;
+    color: #06162e;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.navbar .item a:active {
+    background-image: linear-gradient(to bottom, #9ccaf4 0%, #5d9fe4 48%, #3f88dc 52%, #79b8f0 100%);
+}
+
+
+/* ---------- Contenu ---------- */
+
+.content_container {
+    box-shadow: inset 0 1px 0 #ffffff;
+    padding: 22px 22px 4px 22px;
+}
+
+.bloc {
+    background-color: #ffffff;
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.bloc .title {
+    background-color: #e6e6e6;
+    background-image: linear-gradient(to bottom, #fafafa 0%, #dedede 100%);
+    border-bottom: 1px solid #a9a9a9;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 3px 12px;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.bloc .corps {
+    padding: 14px 16px;
+}
+
+.bloc p {
+    margin-bottom: 10px;
+}
+
+
+/* ---------- Présentation ---------- */
+
+.me .corps p {
+    font-size: 13px;
+}
+
+.me .scroll {
+    border-top: 1px solid #e4e4e4;
+    color: #6e6e6e;
+    font-size: 12px;
+    margin-top: 14px;
+    padding-top: 8px;
+}
+
+/* petit triangle d'ouverture, dessiné en CSS */
+.me .scroll:before {
+    content: "";
+    display: inline-block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #8c8c8c;
+    margin-right: 7px;
+    vertical-align: 1px;
+}
+
+
+/* ---------- Projets ---------- */
+
+.projets .liste {
+    list-style: none;
+}
+
+.projets .liste li {
+    padding: 2px 0 2px 16px;
+    position: relative;
+}
+
+.projets .liste li:before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    background-color: #5d8ccc;
+}
+
+
+/* ---------- Compétences (liste sur deux colonnes) ---------- */
+
+.skills .corps {
+    padding: 0;
+}
+
+.skills .liste {
+    list-style: none;
+    overflow: hidden;
+}
+
+.skills .liste li {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 3px 16px;
+    background-color: #ffffff;
+}
+
+/* une ligne sur deux en bleu clair, comme les listes du Finder */
+.skills .liste li:nth-child(4n+1),
+.skills .liste li:nth-child(4n+2) {
+    background-color: #edf3fe;
+}
+
+.skills .liste li:nth-child(odd) {
+    border-right: 1px solid #dddddd;
+}
+
+
+/* ---------- Pied de page ---------- */
+
+.footer {
+    background-color: #e2e2e2;
+    background-image: linear-gradient(to bottom, #ebebeb 0%, #d6d6d6 100%);
+    border-top: 1px solid #a3a3a3;
+    box-shadow: inset 0 1px 0 #f7f7f7;
+    color: #4f4f4f;
+    font-size: 12px;
+    line-height: 1.75;
+    padding: 12px 22px 13px 22px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+
+/* ---------- Informations techniques (sous la fenêtre) ---------- */
+
+#infos {
+    color: #5f5f5f;
+    font-size: 12px;
+    margin: 16px auto 0 auto;
+    text-align: center;
+    width: 780px;
+}
+
+#infos .badges {
+    margin-top: 8px;
+}
+
+/* boutons 80x15 dessinés en CSS */
+.badge {
+    display: inline-block;
+    width: 76px;
+    height: 11px;
+    padding: 1px;
+    background-color: #ffffff;
+    border: 1px solid #4d4d4d;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 9px;
+    line-height: 11px;
+    margin: 0 2px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.badge span {
+    float: left;
+    height: 11px;
+    text-align: center;
+}
+
+.badge .w3c {
+    width: 24px;
+    margin-right: 1px;
+    background-color: #e3e3e3;
+    color: #1d4f91;
+    font-weight: bold;
+}
+
+.badge .norme {
+    width: 51px;
+    background-color: #3f6ea8;
+    color: #ffffff;
+}
+
+.badge-css .norme {
+    background-color: #5b80ad;
+}

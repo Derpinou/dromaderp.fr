@@ -1,0 +1,477 @@
+/* ==========================================================
+   Dromaderp - version 2019 - Apple (2019-apple.html)
+   Pages produit façon 2019 : grande typographie centrée,
+   sections blanches, grises et noires, liens bleus à chevron.
+   ========================================================== */
+
+
+/* ---------- Base ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 52px;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1d1d1f;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.47059;
+    letter-spacing: -0.022em;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ---------- Navigation générale ---------- */
+
+.nav-globale {
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav-globale__contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    height: 44px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.nav-globale__liens {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-left: 48px;
+}
+
+.nav-globale__liens a {
+    color: #f5f5f7;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.nav-globale__liens a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+
+/* ---------- Sélecteur de version ---------- */
+
+#versions {
+    color: rgba(245, 245, 247, 0.6);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+#versions select {
+    margin-left: 4px;
+    padding: 3px 22px 3px 8px;
+    border: 1px solid rgba(245, 245, 247, 0.25);
+    border-radius: 6px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='5' viewBox='0 0 9 5'%3E%3Cpath d='M1 1l3.5 3L8 1' fill='none' stroke='%23f5f5f7' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 8px center;
+    color: #f5f5f7;
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#versions option {
+    background-color: #ffffff;
+    color: #1d1d1f;
+}
+
+
+/* ---------- Navigation de la page (collante) ---------- */
+
+.nav-locale {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    background-color: rgba(255, 255, 255, 0.72);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav-locale__contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    height: 52px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.nav-locale__titre {
+    color: #1d1d1f;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.011em;
+}
+
+.nav-locale__titre:hover {
+    text-decoration: none;
+}
+
+.nav-locale__bouton {
+    padding: 4px 11px;
+    border-radius: 12px;
+    background-color: #0071e3;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.33337;
+    letter-spacing: -0.01em;
+}
+
+.nav-locale__bouton:hover {
+    background-color: #0077ed;
+    text-decoration: none;
+}
+
+
+/* ---------- Présentation ---------- */
+
+.hero {
+    padding: 88px 22px 48px;
+    text-align: center;
+}
+
+.hero__nouveau {
+    color: #bf4800;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.011em;
+}
+
+.hero__titre {
+    margin-top: 4px;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+}
+
+.hero__accroche {
+    max-width: 820px;
+    margin: 18px auto 0;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.14286;
+    letter-spacing: 0.007em;
+}
+
+.hero__liens {
+    margin-top: 28px;
+    font-size: 21px;
+    letter-spacing: 0.011em;
+}
+
+.hero__liens a {
+    margin: 0 18px;
+}
+
+/* lien suivi d'un chevron */
+.lien-chevron::after {
+    content: "\00A0\203A";
+}
+
+/* texte gris avec les passages importants en noir */
+.texte {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 22px 110px;
+}
+
+.texte__paragraphe {
+    margin-bottom: 36px;
+    color: #86868b;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.125;
+    letter-spacing: 0.004em;
+}
+
+.texte__paragraphe strong {
+    color: #1d1d1f;
+    font-weight: 600;
+}
+
+.texte__defiler {
+    color: #86868b;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+/* ---------- Projets : tuiles ---------- */
+
+.projets {
+    padding: 0 12px 12px;
+}
+
+.titre-section {
+    padding-bottom: 40px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.08349;
+    letter-spacing: -0.003em;
+    text-align: center;
+}
+
+.tuiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+}
+
+.tuile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 380px;
+    padding: 40px;
+    text-align: center;
+}
+
+.tuile--noire {
+    background-color: #000000;
+    color: #f5f5f7;
+}
+
+.tuile--grise {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+}
+
+.tuile__titre {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+
+
+/* ---------- Compétences : fiche technique ---------- */
+
+.competences {
+    padding: 100px 22px 110px;
+    background-color: #000000;
+    color: #f5f5f7;
+}
+
+.specs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 24px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.specs li {
+    padding: 16px 0 26px;
+    border-top: 1px solid #424245;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.19048;
+    letter-spacing: 0.011em;
+}
+
+
+/* ---------- Pied de page ---------- */
+
+.pied {
+    background-color: #f5f5f7;
+    color: #6e6e73;
+    font-size: 12px;
+    line-height: 1.33337;
+    letter-spacing: -0.01em;
+}
+
+.pied__contenu {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 17px 22px 21px;
+}
+
+.pied__notes {
+    padding-bottom: 11px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.pied__notes p {
+    margin-bottom: 8px;
+}
+
+.pied__notes p:last-child {
+    margin-bottom: 0;
+}
+
+.pied__contact {
+    padding: 9px 0 11px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.pied__legal {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9px;
+}
+
+
+/* ---------- Écrans moyens ---------- */
+
+@media (max-width: 1068px) {
+    .hero__titre {
+        font-size: 64px;
+    }
+
+    .texte__paragraphe {
+        font-size: 28px;
+        line-height: 1.14286;
+    }
+
+    .tuile__titre {
+        font-size: 32px;
+    }
+}
+
+
+/* ---------- Petits écrans ---------- */
+
+@media (max-width: 734px) {
+    .nav-globale__contenu {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 16px;
+    }
+
+    .nav-globale__liens {
+        flex: none;
+        width: 100%;
+        margin: 8px 0 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .nav-globale__liens::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-globale__liens li {
+        margin-right: 18px;
+        white-space: nowrap;
+    }
+
+    .nav-globale__liens a {
+        font-size: 13px;
+    }
+
+    .nav-locale__contenu {
+        padding: 0 16px;
+    }
+
+    .nav-locale__titre {
+        font-size: 19px;
+    }
+
+    .hero {
+        padding: 56px 16px 32px;
+    }
+
+    .hero__titre {
+        font-size: 48px;
+    }
+
+    .hero__accroche {
+        font-size: 21px;
+        line-height: 1.19048;
+    }
+
+    .hero__liens {
+        font-size: 17px;
+    }
+
+    .hero__liens a {
+        display: inline-block;
+        margin: 0 10px 8px;
+    }
+
+    .texte {
+        padding: 24px 16px 72px;
+    }
+
+    .texte__paragraphe {
+        font-size: 24px;
+        line-height: 1.16667;
+    }
+
+    .titre-section {
+        font-size: 32px;
+    }
+
+    .tuiles {
+        grid-template-columns: 1fr;
+    }
+
+    .tuile {
+        min-height: 260px;
+    }
+
+    .tuile__titre {
+        font-size: 28px;
+    }
+
+    .competences {
+        padding: 72px 16px 80px;
+    }
+
+    .specs {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 16px;
+    }
+
+    .specs li {
+        font-size: 17px;
+    }
+
+    .pied__legal {
+        display: block;
+    }
+}

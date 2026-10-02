@@ -1,0 +1,532 @@
+/* ==========================================================
+   Dromaderp - version 2017 - Bootstrap (2017-bootstrap.html)
+   Reprise allégée des styles de Bootstrap 3.3.7
+   ========================================================== */
+
+
+/* ---------- Base ---------- */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+h1,
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+/* clearfix */
+.container::before,
+.container::after,
+.row::before,
+.row::after {
+    content: " ";
+    display: table;
+}
+
+.container::after,
+.row::after {
+    clear: both;
+}
+
+
+/* ---------- Grille ---------- */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-5,
+.col-md-7 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 992px) {
+    .col-md-5,
+    .col-md-7 {
+        float: left;
+    }
+
+    .col-md-5 {
+        width: 41.66666667%;
+    }
+
+    .col-md-7 {
+        width: 58.33333333%;
+    }
+}
+
+
+/* ---------- Sélecteur de version ---------- */
+
+#versions {
+    padding: 6px 0;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+    color: #777777;
+    font-size: 12px;
+}
+
+#versions form {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 1200px) {
+    #versions form {
+        width: 1170px;
+    }
+}
+
+/* équivalent de .form-control.input-sm */
+#versions select {
+    height: 30px;
+    margin-left: 4px;
+    padding: 5px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background-color: #ffffff;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    color: #555555;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#versions select:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+
+/* ---------- Barre de navigation (navbar-inverse) ---------- */
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.navbar-static-top {
+    z-index: 1000;
+    border-width: 0 0 1px;
+}
+
+.navbar-inverse {
+    border-color: #080808;
+    background-color: #222222;
+}
+
+.navbar-header::before,
+.navbar-header::after {
+    content: " ";
+    display: table;
+}
+
+.navbar-header::after {
+    clear: both;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px;
+    color: #9d9d9d;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.navbar-nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #9d9d9d;
+    line-height: 20px;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* bouton « hamburger » */
+.navbar-case {
+    display: none;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin: 8px 0 8px 0;
+    padding: 9px 10px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navbar-toggle:hover {
+    background-color: #333333;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #ffffff;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+/* sur mobile, le menu est replié par défaut */
+.navbar-nav {
+    display: none;
+    margin: 0 -15px;
+    padding: 7px 0;
+    border-top: 1px solid #101010;
+}
+
+.navbar-case:checked ~ .navbar-nav {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        float: left;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar > .container .navbar-brand {
+        margin-left: -15px;
+    }
+
+    .navbar-nav {
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        border-top: 0;
+    }
+
+    .navbar-right {
+        float: right !important;
+        margin-right: -15px;
+    }
+
+    .navbar-nav > li {
+        float: left;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+
+/* ---------- Jumbotron (présentation) ---------- */
+
+.jumbotron {
+    margin-bottom: 30px;
+    padding: 30px 15px;
+    border-radius: 6px;
+    background-color: #eeeeee;
+    color: inherit;
+}
+
+.jumbotron h1 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding: 48px 60px;
+    }
+
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+}
+
+
+/* ---------- Boutons ---------- */
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.btn-lg {
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+
+.btn-primary {
+    border-color: #2e6da4;
+    background-color: #337ab7;
+    color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    border-color: #204d74;
+    background-color: #286090;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* ---------- Alerte ---------- */
+
+.alert {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-info {
+    border-color: #bce8f1;
+    background-color: #d9edf7;
+    color: #31708f;
+}
+
+
+/* ---------- Panneaux ---------- */
+
+.panel {
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-default {
+    border-color: #dddddd;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dddddd;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: inherit;
+    font-size: 16px;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.list-group {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    border-top: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+.panel > .list-group .list-group-item:first-child {
+    border-top: 0;
+}
+
+.panel > .list-group .list-group-item:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+
+/* ---------- Étiquettes ---------- */
+
+.list-inline {
+    margin-bottom: 0;
+    margin-left: -5px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-inline > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 2;
+}
+
+.label {
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    border-radius: 0.25em;
+    color: #ffffff;
+    font-size: 85%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.label-primary {
+    background-color: #337ab7;
+}
+
+
+/* ---------- Pied de page ---------- */
+
+.footer {
+    margin-top: 10px;
+    padding: 20px 0;
+    background-color: #222222;
+    color: #9d9d9d;
+    font-size: 13px;
+}
+
+.footer p {
+    margin-bottom: 4px;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 767px) {
+    .footer .pull-right {
+        float: none !important;
+    }
+}

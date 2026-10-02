@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+/* Sélecteur de version */
+#versions {
+    padding: 8px 10px 0 10px;
+}
+
 .navbar {
     display: flex;
     gap: 10px;

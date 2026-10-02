@@ -7,6 +7,22 @@
 </head>
 <body>
 
+<!-- Sélecteur de version -->
+<div id="versions">
+    <form action="index.html" method="get">
+        <label for="version">Version&nbsp;:</label>
+        <select id="version" onchange="var page = this.value; this.form.reset(); window.location.href = page;">
+            <option value="index.html" selected>Début d'internet</option>
+            <option value="2005-wordpress.html">2005 - WordPress</option>
+            <option value="2005-macosx.html">2005 - Mac OS X</option>
+            <option value="2010-neon.html">2010 - Néon</option>
+            <option value="2017-bootstrap.html">2017 - Bootstrap</option>
+            <option value="2019-apple.html">2019 - Apple</option>
+            <option value="2026-ia.html">2026 - IA</option>
+        </select>
+    </form>
+</div>
+
 <ul class="navbar">
     <li class="item"><a href="#moi">Présentation</a></li>
     <li class="item"><a href="#projets">Projets</a></li>

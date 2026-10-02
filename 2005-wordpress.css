@@ -1,0 +1,289 @@
+/* ============================================================
+   Dromaderp - version 2005 - WordPress (2005-wordpress.html)
+   Mise en page fixe de 760 pixels, centrée dans la fenêtre.
+   ============================================================ */
+
+
+/* --- Remise à zéro --- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --- Page --- */
+
+body {
+    background-color: #dedfe1;
+    color: #333333;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    font-size: 13px;
+    text-align: center; /* centrage pour IE 5 */
+    padding: 10px 0 30px 0;
+}
+
+#page {
+    width: 760px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #a6a7a9;
+    text-align: left;
+}
+
+a {
+    color: #1f5f99;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1f5f99;
+}
+
+a:hover {
+    color: #0b3c6b;
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+
+/* --- Sélecteur de version --- */
+
+#versions {
+    width: 760px;
+    margin: 0 auto 10px auto;
+    color: #555555;
+    font-size: 12px;
+    text-align: left;
+}
+
+#versions select {
+    margin-left: 4px;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+
+/* --- En-tête --- */
+
+#header {
+    height: 140px;
+    margin: 10px 10px 0 10px;
+    border: 1px solid #2f5b87;
+    border-radius: 10px;
+    background-color: #4a7bad;
+    /* reflet clair en haut, puis dégradé bleu vertical */
+    background-image:
+        radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 60%),
+        linear-gradient(to bottom, #7ba6d3 0%, #5285b8 45%, #355f8a 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.45),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+    text-align: center;
+}
+
+#header h1 {
+    padding-top: 33px;
+    font-family: "Trebuchet MS", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#header h1 a,
+#header h1 a:visited,
+#header h1 a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#header .description {
+    margin-top: 4px;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+/* --- Zone centrale : contenu et barre latérale --- */
+
+#main {
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #dfe3e8;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+
+/* --- Colonne principale --- */
+
+#content {
+    float: left;
+    width: 470px;
+    margin-left: 30px;
+    padding: 24px 0 0 0;
+    display: inline; /* double marge des flottants sous IE 6 */
+}
+
+#content .section {
+    margin-bottom: 28px;
+}
+
+#content h2 {
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e4e9ef;
+    color: #2a5c8a;
+    font-family: "Trebuchet MS", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#content p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+#content p.scroll {
+    margin-top: 18px;
+    padding-top: 9px;
+    border-top: 1px solid #e4e4e4;
+    color: #707070;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+/* --- Listes --- */
+
+.liste {
+    list-style: none;
+}
+
+.liste li {
+    padding-left: 16px;
+    text-indent: -16px;
+    line-height: 1.6;
+    margin-bottom: 3px;
+}
+
+.liste li:before {
+    content: "\00BB\00A0\00A0";
+    color: #9a9a9a;
+}
+
+
+/* --- Barre latérale --- */
+
+/* encadré gris clair, limité à la hauteur de son contenu */
+#sidebar {
+    float: right;
+    width: 164px;
+    margin: 24px 18px 24px 0;
+    padding: 14px 14px 0 14px;
+    border: 1px solid #e1e5ea;
+    border-radius: 6px;
+    background-color: #f4f6f8;
+    font-size: 12px;
+    display: inline; /* double marge des flottants sous IE 6 */
+}
+
+#sidebar h2 {
+    margin-bottom: 6px;
+    color: #666666;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#sidebar .navbar {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+#sidebar .navbar .item {
+    padding: 3px 0 3px 2px;
+    border-bottom: 1px solid #e6e9ed;
+}
+
+#sidebar .navbar .item:before {
+    content: "\00BB\00A0";
+    color: #9a9a9a;
+}
+
+
+/* --- Pied de page --- */
+
+#footer {
+    clear: both;
+    margin: 0 10px 10px 10px;
+    padding: 16px 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background-color: #efefef;
+    background-image: linear-gradient(to bottom, #f6f6f6 0%, #e9e9e9 100%);
+    color: #606060;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+
+/* --- Informations techniques --- */
+
+#colophon {
+    margin-top: 12px;
+    color: #555555;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+#colophon p {
+    margin-bottom: 8px;
+}
+
+/* boutons 80x15 : cadre gris, liseré blanc, deux zones */
+.badge {
+    display: inline-block;
+    width: 76px;
+    height: 11px;
+    margin: 0 2px;
+    padding: 1px;
+    border: 1px solid #555555;
+    background-color: #ffffff;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 11px;
+    white-space: nowrap;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.badge span {
+    display: block;
+    float: left;
+    height: 11px;
+    text-align: center;
+}
+
+.badge .w3c {
+    width: 23px;
+    background-color: #dadada;
+    color: #1c4f80;
+}
+
+.badge .spec {
+    width: 52px;
+    margin-left: 1px;
+    background-color: #3e6f9f;
+    color: #ffffff;
+}
+

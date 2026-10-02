@@ -1,0 +1,465 @@
+/*
+ * dromaderp.fr - version 2010 "Néon"
+ * Mise en page fixe de 960 pixels (grille 960)
+ * Couleurs : fond bleu rayé, boîtes noires, une seule couleur d'accent (cyan doux)
+ * Auteur : Derp
+ */
+
+/* ---------- Remise à zéro ---------- */
+
+html, body, div, p, h1, h2, ul, li, dl, dt, dd, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Les nouveaux éléments HTML5 s'affichent en bloc */
+header, nav, section, aside, footer {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ---------- Page ---------- */
+
+body {
+    background-color: #1f2960;
+    /* Rayures en diagonale, peu contrastées : un petit carreau répété */
+    background-image: -webkit-linear-gradient(-45deg, #24306c 25%, #1b2453 25%, #1b2453 50%, #24306c 50%, #24306c 75%, #1b2453 75%);
+    background-image: -moz-linear-gradient(-45deg, #24306c 25%, #1b2453 25%, #1b2453 50%, #24306c 50%, #24306c 75%, #1b2453 75%);
+    background-image: linear-gradient(135deg, #24306c 25%, #1b2453 25%, #1b2453 50%, #24306c 50%, #24306c 75%, #1b2453 75%);
+    -webkit-background-size: 14px 14px;
+    -moz-background-size: 14px 14px;
+    background-size: 14px 14px;
+    color: #e2e5ee;
+    font: 14px/1.6 "Trebuchet MS", Verdana, Arial, sans-serif;
+}
+
+a {
+    color: #8fd0dc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ---------- Sélecteur de version ---------- */
+
+#versions {
+    padding: 8px 10px;
+}
+
+#versions form {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #0a0b12;
+    border: 2px solid;
+    border-color: #8e93a6 #3b3e4c #3b3e4c #8e93a6;
+    color: #e2e5ee;
+    font: 12px Verdana, Tahoma, Arial, sans-serif;
+}
+
+#versions label {
+    color: #8fd0dc;
+    font-weight: bold;
+}
+
+#versions select {
+    margin-left: 4px;
+    font: 12px Verdana, Tahoma, Arial, sans-serif;
+}
+
+/* ---------- Conteneur 960 ---------- */
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+/* ---------- En-tête ---------- */
+
+#entete {
+    padding: 34px 0 0 0;
+    text-align: center;
+}
+
+/* Titre d'une seule couleur, léger relief sombre */
+#entete h1 {
+    color: #eef1f8;
+    font: normal 78px/92px Impact, "Arial Black", sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0 #0d1236, 0 0 24px rgba(143, 208, 220, 0.25);
+}
+
+#entete .sous-titre {
+    margin-top: 6px;
+    color: #8fd0dc;
+    font: bold 24px/30px "Trebuchet MS", Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+#entete .slogan {
+    margin-top: 2px;
+    color: #9aa1b8;
+    font-size: 15px;
+}
+
+/* ---------- Menu ---------- */
+
+#menu {
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+#menu .item {
+    float: left;
+    width: 146px;
+    background-color: #3a3d4a;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4a4d5b), to(#363844));
+    background-image: -moz-linear-gradient(top, #4a4d5b, #363844);
+    background-image: linear-gradient(to bottom, #4a4d5b, #363844);
+    border: 2px solid;
+    border-color: #8e93a6 #24262f #24262f #8e93a6;
+    text-align: center;
+}
+
+#menu .item + .item {
+    margin-left: 12px;
+}
+
+#menu .item a {
+    display: block;
+    padding: 7px 0;
+    color: #e2e5ee;
+    font: bold 13px Verdana, Tahoma, Arial, sans-serif;
+}
+
+#menu .item a:hover {
+    color: #8fd0dc;
+    text-decoration: none;
+}
+
+/* ---------- Colonnes ---------- */
+
+#colonnes {
+    overflow: hidden;
+}
+
+#gauche {
+    float: left;
+    width: 220px;
+}
+
+#centre {
+    float: left;
+    width: 500px;
+    margin-left: 20px;
+}
+
+#droite {
+    float: right;
+    width: 200px;
+}
+
+/* ---------- Boîtes noires ---------- */
+
+.boite {
+    margin-bottom: 20px;
+    padding: 16px;
+    background-color: #0a0b12;
+    border: 3px solid;
+    border-color: #8e93a6 #3b3e4c #3b3e4c #8e93a6;
+    -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Titres des petites boîtes */
+.boite h2 {
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2a2f45;
+    color: #8fd0dc;
+    font: bold 13px Verdana, Tahoma, Arial, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ---------- Colonne de gauche ---------- */
+
+#gauche,
+#droite {
+    font-size: 13px;
+}
+
+#news dt {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#news dd {
+    margin-bottom: 20px;
+    color: #b4bacb;
+}
+
+#news dd:last-child {
+    margin-bottom: 0;
+}
+
+/* Étiquette "Nouveau" */
+#news .nouveau {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 0 5px;
+    border: 1px solid #8fd0dc;
+    color: #8fd0dc;
+    font: 10px/15px Verdana, Tahoma, Arial, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    vertical-align: 1px;
+}
+
+#compteur .chiffres-cadre {
+    text-align: center;
+}
+
+#compteur .chiffres {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 3px;
+    background-color: #000000;
+    border: 2px solid;
+    border-color: #3b3e4c #8e93a6 #8e93a6 #3b3e4c;
+}
+
+#compteur .chiffres span {
+    display: inline-block;
+    width: 20px;
+    margin: 0 1px;
+    background-color: #15171f;
+    color: #8fd0dc;
+    font: bold 18px/28px "Courier New", Courier, monospace;
+}
+
+#sondage .question {
+    margin-bottom: 14px;
+    color: #e2e5ee;
+}
+
+#sondage li {
+    margin-bottom: 8px;
+    color: #b4bacb;
+}
+
+#sondage input {
+    margin: 0 5px 0 0;
+    vertical-align: -2px;
+}
+
+.envoi {
+    margin-top: 26px;
+    text-align: center;
+}
+
+.envoi button {
+    padding: 3px 16px;
+    background-color: #3a3d4a;
+    border: 2px solid;
+    border-color: #8e93a6 #24262f #24262f #8e93a6;
+    color: #9aa1b8;
+    font: bold 12px Verdana, Tahoma, Arial, sans-serif;
+}
+
+/* ---------- Colonne centrale ---------- */
+
+#centre .boite {
+    padding: 20px 24px;
+}
+
+#moi .bienvenue {
+    margin-bottom: 18px;
+    padding-bottom: 0;
+    border-bottom: 0;
+    color: #8fd0dc;
+    font: normal 38px/44px Impact, "Arial Black", sans-serif;
+    letter-spacing: 6px;
+    text-align: center;
+    text-shadow: 0 0 12px rgba(143, 208, 220, 0.35);
+}
+
+#moi p {
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+#moi .intro {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+#moi .scroll {
+    margin: 20px 0 0 0;
+    padding-top: 12px;
+    border-top: 1px solid #2a2f45;
+    color: #9aa1b8;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Petites flèches vers le bas, de part et d'autre de la phrase */
+#moi .scroll:before,
+#moi .scroll:after {
+    content: "\25BC";
+    color: #8fd0dc;
+    font-size: 10px;
+    font-style: normal;
+}
+
+#moi .scroll:before {
+    margin-right: 8px;
+}
+
+#moi .scroll:after {
+    margin-left: 8px;
+}
+
+#centre .title {
+    margin-bottom: 14px;
+    font: bold 20px "Trebuchet MS", Verdana, sans-serif;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.projets .liste li {
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.projets .liste li:before {
+    content: "\25B8";
+    margin-right: 10px;
+    color: #8fd0dc;
+}
+
+/* Compétences : boutons identiques */
+.skills .liste {
+    overflow: hidden;
+}
+
+.skills .liste li {
+    float: left;
+    margin: 0 6px 6px 0;
+    padding: 4px 10px;
+    background-color: #161822;
+    border: 1px solid;
+    border-color: #5d6275 #262833 #262833 #5d6275;
+    color: #d3d7e2;
+    font: 12px Verdana, Tahoma, Arial, sans-serif;
+}
+
+/* ---------- Colonne de droite ---------- */
+
+#statut li {
+    margin-bottom: 8px;
+    color: #e2e5ee;
+}
+
+#statut li:last-child {
+    margin-bottom: 0;
+}
+
+/* Intitulé au-dessus de la valeur */
+#statut .cle {
+    display: block;
+    color: #9aa1b8;
+    font-size: 11px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Pastille d'état */
+#statut .en-ligne:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+    background-color: #8fd0dc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    vertical-align: 1px;
+}
+
+#liens li,
+#webring li {
+    margin-bottom: 2px;
+}
+
+/* Liens soulignés dans les boîtes de droite */
+#liens li a,
+#webring li a {
+    text-decoration: underline;
+}
+
+/* Barre de navigation de l'anneau, en creux */
+#webring .anneau {
+    margin-bottom: 10px;
+    padding: 3px 0;
+    background-color: #15171f;
+    border: 2px solid;
+    border-color: #3b3e4c #8e93a6 #8e93a6 #3b3e4c;
+    color: #e2e5ee;
+    text-align: center;
+}
+
+#webring .fleche {
+    margin: 0 6px;
+    font-size: 12px;
+}
+
+#webring .fleche:hover {
+    text-decoration: none;
+}
+
+/* Boutons de la page, tous du même style, en relief comme le menu */
+.boutons li {
+    margin-bottom: 14px;
+    padding: 7px 0;
+    background-color: #2c2e38;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#363844), to(#23252e));
+    background-image: -moz-linear-gradient(top, #363844, #23252e);
+    background-image: linear-gradient(to bottom, #363844, #23252e);
+    border: 2px solid;
+    border-color: #8e93a6 #24262f #24262f #8e93a6;
+    color: #b4bacb;
+    font: bold 11px Verdana, Tahoma, Arial, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* ---------- Pied de page ---------- */
+
+#pied {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 18px 16px;
+    color: #9aa1b8;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+#pied p:first-child {
+    color: #e2e5ee;
+    font-weight: bold;
+}

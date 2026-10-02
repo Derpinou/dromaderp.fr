@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Derp">
+    <meta name="description" content="Site personnel de Derp">
+    <title>Dromaderp</title>
+    <link rel="stylesheet" href="2010-neon.css">
+</head>
+<body>
+
+<!-- Sélecteur de version -->
+<div id="versions">
+    <form action="index.html" method="get">
+        <label for="version">Version&nbsp;:</label>
+        <select id="version" onchange="var page = this.value; this.form.reset(); window.location.href = page;">
+            <option value="index.html">Début d'internet</option>
+            <option value="2005-wordpress.html">2005 - WordPress</option>
+            <option value="2005-macosx.html">2005 - Mac OS X</option>
+            <option value="2010-neon.html" selected>2010 - Néon</option>
+            <option value="2017-bootstrap.html">2017 - Bootstrap</option>
+            <option value="2019-apple.html">2019 - Apple</option>
+            <option value="2026-ia.html">2026 - IA</option>
+        </select>
+    </form>
+</div>
+
+<div id="page">
+
+    <!-- En-tête -->
+    <header id="entete">
+        <h1>dromaderp.fr</h1>
+        <p class="sous-titre">Le site de Derp</p>
+        <p class="slogan">Programmateur de pages internet</p>
+    </header>
+
+    <!-- Menu principal -->
+    <nav id="menu">
+        <ul class="navbar">
+            <li class="item"><a href="#moi">Présentation</a></li>
+            <li class="item"><a href="#projets">Projets</a></li>
+            <li class="item"><a href="#skills">Compétences</a></li>
+            <li class="item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Rick Astley</a></li>
+            <li class="item"><a href="https://github.com/derpinou/dromaderp.fr">Source du site</a></li>
+            <li class="item"><a href="https://discord.com/invite/ahjFrbk2Nr">Discord</a></li>
+        </ul>
+    </nav>
+
+    <div id="colonnes">
+
+        <!-- Colonne de gauche -->
+        <aside id="gauche">
+
+            <section class="boite" id="news">
+                <h2>News</h2>
+                <dl>
+                    <dt>2010 <span class="nouveau">Nouveau</span></dt>
+                    <dd>Nouvelle version du site&nbsp;: 2010&nbsp;-&nbsp;Néon</dd>
+                    <dt>2005</dt>
+                    <dd>Version Mac OS X</dd>
+                    <dt>2005</dt>
+                    <dd>Version WordPress</dd>
+                    <dt>Début d'internet</dt>
+                    <dd>Première version du site</dd>
+                </dl>
+            </section>
+
+            <section class="boite" id="compteur">
+                <h2>Visiteurs</h2>
+                <div class="chiffres-cadre">
+                    <p class="chiffres"><span>0</span><span>0</span><span>4</span><span>3</span><span>1</span><span>7</span></p>
+                </div>
+            </section>
+
+            <section class="boite" id="sondage">
+                <h2>Sondage</h2>
+                <form action="#" method="post">
+                    <p class="question">Quelle version du site préférez-vous&nbsp;?</p>
+                    <ul>
+                        <li><input type="radio" name="choix" id="choix1" disabled> <label for="choix1">Début d'internet</label></li>
+                        <li><input type="radio" name="choix" id="choix2" disabled> <label for="choix2">2005 - WordPress</label></li>
+                        <li><input type="radio" name="choix" id="choix3" disabled> <label for="choix3">2005 - Mac OS X</label></li>
+                        <li><input type="radio" name="choix" id="choix4" disabled> <label for="choix4">2010 - Néon</label></li>
+                    </ul>
+                    <p class="envoi"><button type="submit" disabled>Voter</button></p>
+                </form>
+            </section>
+
+        </aside>
+
+        <!-- Colonne centrale -->
+        <div id="centre">
+
+            <section class="boite me" id="moi">
+                <h2 class="bienvenue">Bienvenue</h2>
+                <p class="intro">Bonjour je m'appelle Derp, Aussi appellé Derpinou, Derpinette, ou bien encore Dromaderp</p>
+                <p>
+                    Comme vous avez pu le voir avec cette page blog, je suis programmateur de pages internet
+                    <br>
+                    Je maîtrise le HTML5, le CSS3 et le JavaScript
+                </p>
+                <p>Je suis développeur de Bot Certifiés sur Discord, en effet, j'ai développé des bots certifiés</p>
+                <p class="scroll">Déroulez la page avec votre molette pour voir le reste du blog</p>
+            </section>
+
+            <section class="boite projets" id="projets">
+                <h2 class="title">Projets</h2>
+                <ul class="liste">
+                    <li>TODO: Faire la liste</li>
+                    <li>... Et plein d'autres choses encore</li>
+                </ul>
+            </section>
+
+            <section class="boite skills" id="skills">
+                <h2 class="title">Apercu de mes compétences</h2>
+                <ul class="liste">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>PHP 5.2</li>
+                    <li>Node.js</li>
+                    <li>Vue.js / NuxtJs</li>
+                    <li>TailwindCss</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>Java(Pas Script)</li>
+                    <li>Docker</li>
+                    <li>PostgreSQL</li>
+                    <li>MariaDB</li>
+                    <li>Redis</li>
+                    <li>NestJs</li>
+                    <li>Pro au BabyFoot</li>
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- Colonne de droite -->
+        <aside id="droite">
+
+            <section class="boite" id="statut">
+                <h2>Statut</h2>
+                <ul>
+                    <li><span class="cle">État</span> <span class="en-ligne">en ligne</span></li>
+                    <li><span class="cle">Versions disponibles</span> 4</li>
+                    <li><span class="cle">Version du site</span> 2010</li>
+                </ul>
+            </section>
+
+            <section class="boite" id="liens">
+                <h2>Mes liens</h2>
+                <ul>
+                    <li><a href="https://github.com/derpinou/dromaderp.fr">Source du site</a></li>
+                    <li><a href="https://discord.com/invite/ahjFrbk2Nr">Discord</a></li>
+                </ul>
+            </section>
+
+            <section class="boite" id="webring">
+                <h2>Webring</h2>
+                <p class="anneau">
+                    <a class="fleche" href="2005-macosx.html" title="Version précédente">&#9668;</a>
+                    <span>dromaderp.fr</span>
+                    <a class="fleche" href="index.html" title="Version suivante">&#9658;</a>
+                </p>
+                <ul>
+                    <li><a href="index.html">Début d'internet</a></li>
+                    <li><a href="2005-wordpress.html">2005 - WordPress</a></li>
+                    <li><a href="2005-macosx.html">2005 - Mac OS X</a></li>
+                </ul>
+            </section>
+
+            <!-- Boutons des technologies utilisées par cette page -->
+            <ul class="boutons">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>UTF-8</li>
+                <li>Sans cookies</li>
+                <li>1024 &times; 768</li>
+            </ul>
+
+        </aside>
+
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="boite footer" id="pied">
+        <p>dromaderp.fr @ Tous droits réservés</p>
+        <p>Design fait avec &lt;3 par Derp</p>
+        <p>Ce site n'utilises pas de cookies</p>
+        <p>Ce site est fictif et est à but humoristique, merci de ne pas le prendre au pied de la lettre</p>
+        <p>Si vous souhaitez me contacter, joignez ma communauté discord</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

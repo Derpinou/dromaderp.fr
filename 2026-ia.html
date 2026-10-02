@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Site personnel de Derp">
+    <meta name="theme-color" content="#06050b">
+    <title>Dromaderp ✨</title>
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="2026-ia.css">
+</head>
+<body>
+
+<!-- Décor : aurores, grille, grain et halo -->
+<div class="decor" aria-hidden="true">
+    <div class="aurore aurore--1"></div>
+    <div class="aurore aurore--2"></div>
+    <div class="aurore aurore--3"></div>
+    <div class="grille"></div>
+    <div class="grain"></div>
+    <div class="halo-curseur"></div>
+</div>
+
+<!-- Sélecteur de version -->
+<div id="versions">
+    <form action="index.html" method="get">
+        <label for="version">Version&nbsp;:</label>
+        <select id="version" onchange="var page = this.value; this.form.reset(); window.location.href = page;">
+            <option value="index.html">Début d'internet</option>
+            <option value="2005-wordpress.html">2005 - WordPress</option>
+            <option value="2005-macosx.html">2005 - Mac OS X</option>
+            <option value="2010-neon.html">2010 - Néon</option>
+            <option value="2017-bootstrap.html">2017 - Bootstrap</option>
+            <option value="2019-apple.html">2019 - Apple</option>
+            <option value="2026-ia.html" selected>2026 - IA</option>
+        </select>
+    </form>
+</div>
+
+<!-- Navigation flottante -->
+<header class="nav">
+    <nav class="nav__pilule">
+        <a class="logo" href="#moi"><span class="logo__icone">D</span>Dromaderp</a>
+        <button class="nav__burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-liens">
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav__liens" id="menu-liens">
+            <li><a href="#moi">Présentation</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Rick Astley</a></li>
+            <li><a href="https://github.com/derpinou/dromaderp.fr">Source du site</a></li>
+            <li><a class="nav__cta" href="https://discord.com/invite/ahjFrbk2Nr">Discord</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Présentation -->
+    <section class="hero" id="moi">
+        <div class="lampe" aria-hidden="true"></div>
+        <span class="etincelle" aria-hidden="true">✦</span>
+        <span class="etincelle" aria-hidden="true">✦</span>
+        <span class="etincelle" aria-hidden="true">✧</span>
+        <span class="etincelle" aria-hidden="true">✦</span>
+        <span class="etincelle" aria-hidden="true">✧</span>
+        <span class="etincelle" aria-hidden="true">✦</span>
+
+        <a class="badge apparition" href="#projets">
+            <span class="badge__point"></span>
+            ✨ Nouveau · Version 2026 propulsée par l'IA
+            <span class="badge__fleche">→</span>
+        </a>
+
+        <h1 class="hero__titre apparition">Bonjour je m'appelle Derp, Aussi appellé Derpinou, Derpinette, ou bien encore <span class="texte-degrade">Dromaderp</span></h1>
+
+        <p class="hero__sous-titre apparition">
+            Comme vous avez pu le voir avec cette page blog, je suis programmateur de pages internet
+            <br>
+            Je maîtrise le HTML5, le CSS3 et le JavaScript
+        </p>
+
+        <div class="hero__actions apparition">
+            <a class="bouton bouton--brillant" href="#projets">Voir les projets <span aria-hidden="true">→</span></a>
+            <a class="bouton bouton--verre" href="#skills">Compétences</a>
+        </div>
+
+        <a class="defiler apparition" href="#chiffres">
+            <span class="defiler__souris"></span>
+            Déroulez la page avec votre molette pour voir le reste du blog
+        </a>
+    </section>
+
+    <!-- Chiffres et carte principale -->
+    <section class="section" id="chiffres">
+        <ul class="chiffres">
+            <li class="carte-verre chiffre revele"><span class="chiffre__nombre">16</span><span class="chiffre__label">Compétences</span></li>
+            <li class="carte-verre chiffre revele"><span class="chiffre__nombre">2</span><span class="chiffre__label">Projets</span></li>
+            <li class="carte-verre chiffre revele"><span class="chiffre__nombre">7</span><span class="chiffre__label">Versions du site</span></li>
+            <li class="carte-verre chiffre revele"><span class="chiffre__nombre">∞</span><span class="chiffre__label">Choses encore</span></li>
+        </ul>
+
+        <article class="carte-verre bordure-animee vedette revele">
+            <span class="icone-degrade" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 8V4H8"></path><rect x="4" y="8" width="16" height="12" rx="2"></rect><path d="M2 14h2M20 14h2M15 13v2M9 13v2"></path></svg>
+            </span>
+            <p class="surtitre">✦ Discord</p>
+            <p class="vedette__texte">Je suis développeur de Bot Certifiés sur Discord, en effet, j'ai développé des bots certifiés</p>
+        </article>
+    </section>
+
+    <!-- Projets -->
+    <section class="section" id="projets">
+        <div class="entete-section revele">
+            <p class="surtitre surtitre--pilule">✦ Projets</p>
+            <h2 class="titre-section">Projets</h2>
+        </div>
+        <ul class="projets">
+            <li class="carte-verre projet revele">
+                <span class="icone-degrade" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"></path></svg>
+                </span>
+                <p class="projet__titre">TODO: Faire la liste</p>
+                <span class="projet__fleche" aria-hidden="true">→</span>
+            </li>
+            <li class="carte-verre projet revele">
+                <span class="icone-degrade icone-degrade--rose" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"></path><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"></path></svg>
+                </span>
+                <p class="projet__titre">... Et plein d'autres choses encore</p>
+                <span class="projet__fleche" aria-hidden="true">→</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Compétences -->
+    <section class="section" id="skills">
+        <div class="entete-section revele">
+            <p class="surtitre surtitre--pilule">✦ Compétences</p>
+            <h2 class="titre-section">Apercu de mes compétences</h2>
+        </div>
+        <div class="defilant revele">
+            <ul class="defilant__piste">
+                <li class="puce">HTML5</li>
+                <li class="puce">CSS3</li>
+                <li class="puce">JavaScript</li>
+                <li class="puce">PHP 5.2</li>
+                <li class="puce">Node.js</li>
+                <li class="puce">Vue.js / NuxtJs</li>
+                <li class="puce">TailwindCss</li>
+                <li class="puce">Python</li>
+                <li class="puce">C++</li>
+                <li class="puce">Java(Pas Script)</li>
+                <li class="puce">Docker</li>
+                <li class="puce">PostgreSQL</li>
+                <li class="puce">MariaDB</li>
+                <li class="puce">Redis</li>
+                <li class="puce">NestJs</li>
+                <li class="puce">Pro au BabyFoot</li>
+            </ul>
+            <!-- copie pour la boucle infinie -->
+            <ul class="defilant__piste defilant__piste--copie" aria-hidden="true">
+                <li class="puce">HTML5</li>
+                <li class="puce">CSS3</li>
+                <li class="puce">JavaScript</li>
+                <li class="puce">PHP 5.2</li>
+                <li class="puce">Node.js</li>
+                <li class="puce">Vue.js / NuxtJs</li>
+                <li class="puce">TailwindCss</li>
+                <li class="puce">Python</li>
+                <li class="puce">C++</li>
+                <li class="puce">Java(Pas Script)</li>
+                <li class="puce">Docker</li>
+                <li class="puce">PostgreSQL</li>
+                <li class="puce">MariaDB</li>
+                <li class="puce">Redis</li>
+                <li class="puce">NestJs</li>
+                <li class="puce">Pro au BabyFoot</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Appel à l'action -->
+    <section class="section">
+        <div class="carte-verre bordure-animee appel revele">
+            <div class="appel__halo" aria-hidden="true"></div>
+            <p class="surtitre surtitre--pilule">✦ Contact</p>
+            <p class="appel__titre">Si vous souhaitez me contacter, joignez ma communauté discord</p>
+            <a class="bouton bouton--brillant" href="https://discord.com/invite/ahjFrbk2Nr">Rejoindre le Discord <span aria-hidden="true">→</span></a>
+        </div>
+    </section>
+
+</main>
+
+<!-- Pied de page -->
+<footer class="pied">
+    <div class="pied__contenu">
+        <a class="logo" href="#moi"><span class="logo__icone">D</span>Dromaderp</a>
+        <div class="pied__textes">
+            <p>dromaderp.fr @ Tous droits réservés</p>
+            <p>Design fait avec &lt;3 par Derp</p>
+            <p>Ce site n'utilises pas de cookies</p>
+            <p>Ce site est fictif et est à but humoristique, merci de ne pas le prendre au pied de la lettre</p>
+        </div>
+    </div>
+    <p class="pied__geant" aria-hidden="true">DROMADERP</p>
+</footer>
+
+<script>
+    // halo qui suit la souris + projecteur sur les cartes en verre
+    var cartes = document.querySelectorAll('.carte-verre');
+    document.addEventListener('pointermove', function (e) {
+        document.documentElement.style.setProperty('--souris-x', e.clientX + 'px');
+        document.documentElement.style.setProperty('--souris-y', e.clientY + 'px');
+        cartes.forEach(function (carte) {
+            var r = carte.getBoundingClientRect();
+            carte.style.setProperty('--x', (e.clientX - r.left) + 'px');
+            carte.style.setProperty('--y', (e.clientY - r.top) + 'px');
+        });
+    });
+
+    // apparition des blocs au défilement
+    var observateur = new IntersectionObserver(function (entrees) {
+        entrees.forEach(function (entree) {
+            if (entree.isIntersecting) {
+                entree.target.classList.add('visible');
+                observateur.unobserve(entree.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.revele').forEach(function (bloc) {
+        observateur.observe(bloc);
+    });
+
+    // menu burger (mobile et tablette)
+    var nav = document.querySelector('.nav');
+    var burger = document.querySelector('.nav__burger');
+    function basculerMenu(ouvrir) {
+        nav.classList.toggle('nav--ouvert', ouvrir);
+        burger.setAttribute('aria-expanded', ouvrir ? 'true' : 'false');
+        burger.setAttribute('aria-label', ouvrir ? 'Fermer le menu' : 'Ouvrir le menu');
+    }
+    burger.addEventListener('click', function () {
+        basculerMenu(!nav.classList.contains('nav--ouvert'));
+    });
+    document.querySelectorAll('.nav__liens a').forEach(function (lien) {
+        lien.addEventListener('click', function () {
+            basculerMenu(false);
+        });
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            basculerMenu(false);
+        }
+    });
+</script>
+
+</body>
+</html>
